@@ -5,6 +5,10 @@
   <title>Jia Ren | PhD in Linguistics</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
+    html {
+      font-size: 16px; /* base size: 1rem = 16px */
+    }
+
     body {
       font-family: sans-serif;
       margin: 0;
@@ -15,8 +19,20 @@
 
     .container {
       max-width: 800px;
-      margin: 0 auto;       /* centers the content */
-      padding: 1em;          /* inner spacing */
+      margin: 0 auto;
+      padding: 1em;
+    }
+
+    h1 {
+      font-size: 2rem; /* scales with base font-size */
+    }
+
+    h2 {
+      font-size: 1.5rem;
+    }
+
+    p {
+      font-size: 1rem;
     }
 
     img {
@@ -26,13 +42,29 @@
       margin: 0 auto;
     }
 
-    @media (max-width: 600px) {
-      body {
-        padding: 0.5em;
-      }
+    figcaption {
+      text-align: center;
+      font-style: italic;
+      font-size: 0.9rem;
+      margin-top: 0.5em;
+    }
 
-      .container {
-        padding: 0.5em;
+    /* 🔁 Adjust font sizes on smaller screens */
+    @media (max-width: 768px) {
+      html {
+        font-size: 15px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      html {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 400px) {
+      html {
+        font-size: 13px;
       }
     }
   </style>
